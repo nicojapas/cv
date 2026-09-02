@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nicolas Japas - CV</title>
+    <link rel="stylesheet" href="cv_njapas.css">
+</head>
+
+<body>
+    <div class="cv-document">
+
+        <div class="header-name">Nicolas Japas</div>
+
+        <div class="subtitle">Senior Full-Stack AI Engineer · LLM Systems, Product &amp; Cloud</div>
+
+        <div class="contact">
+            Lisbon, Portugal &bull; +351 918 254 312 &bull; German &amp; Argentinian Citizen (no visa required)<br>
+            nicolasjapas@gmail.com &bull; linkedin.com/in/nicolas-japas &bull; github.com/nicojapas
+        </div>
+
+        <h2>Summary</h2>
+        <div class="summary">Full-stack engineer shipping production LLM systems end-to-end, from the retrieval layer
+            (hybrid search, chunking, re-ranking) and agent orchestration through the APIs and interfaces that expose
+            them to real users. Currently building a live conversational AI product for an enterprise client, owning
+            frontend, API, agent, and ingestion services. Deep AWS background in event-driven serverless architecture,
+            with production experience in distributed systems design and infrastructure-as-code. AWS SAA certified,
+            HashiCorp Terraform Associate.</div>
+
+        <h2>Core Skills</h2>
+        <div class="skill-line"><strong>Languages:</strong> Python, TypeScript, JavaScript, SQL, C++, Bash</div>
+        <div class="skill-line"><strong>AI / LLM:</strong> RAG (hybrid search, chunking, re-ranking, metadata
+            filtering), LangGraph, LangChain, Tool Calling, Amazon Bedrock, OpenSearch Serverless, FAISS,
+            Embeddings (Titan v2), Guardrails, vLLM, Voice Agents</div>
+        <div class="skill-line"><strong>Backend:</strong> FastAPI, Node.js, REST APIs, Event-Driven, OpenAPI,
+            GraphQL, Pydantic, asyncio, Pytest, Sentry</div>
+        <div class="skill-line"><strong>Frontend:</strong> React, Next.js, TypeScript, Vite,
+            MUI, Tailwind, Webpack, Playwright, Jest, Cypress</div>
+        <div class="skill-line"><strong>Cloud:</strong> AWS (Lambda, Bedrock, OpenSearch, EventBridge, API Gateway, S3,
+            DynamoDB, Glue, CloudWatch, Cognito, IAM), AWS CDK; Cloudflare (Workers, Pages, D1, KV, R2)</div>
+        <div class="skill-line"><strong>Infrastructure:</strong> Terraform, CloudFormation, Docker, Kubernetes,
+            Microservices, GitHub Actions, CI/CD, IaC</div>
+        <div class="skill-line"><strong>Databases:</strong> PostgreSQL, DynamoDB, MongoDB, MySQL, Neo4j, Cypher,
+            SQLAlchemy, DuckDB
+        </div>
+        <div class="skill-line"><strong>AI-Native Workflow:</strong> Cursor, Claude Code; parallel
+            agentic development with repo-level instrumentation</div>
+
+        <h2>Certifications</h2>
+        <div class="certifications">
+            <div class="skill-line"><strong>AWS Solutions Architect Associate</strong> (SAA-C03), 2026 |
+                <strong>HashiCorp Terraform Associate 004</strong>, 2026 |
+                <strong>Neo4j Certified Professional</strong>, 2026
+            </div>
+        </div>
+
+        <h2>Experience</h2>
+        <div class="experience-entry">
+            <div class="exp-header"><strong>Senior Full-Stack AI Engineer (B2B Contract) - PwC AppDev</strong> | Remote
+                &nbsp; Jul 2026 &ndash; Present</div>
+            <ul class="highlights">
+                <li>Work inside the retrieval layer of a production conversational AI assistant: hybrid search
+                    over OpenSearch Serverless (vector kNN, metadata filtering), Bedrock Titan v2 embeddings,
+                    and chunk re-ranking.</li>
+                <li>Deliver across services: React 18 SPA, FastAPI/Pydantic API on AWS Lambda, LangGraph agent, and a
+                    scheduled ingestion service; function calling and structured responses (text, action buttons, data
+                    cards).</li>
+                <li>Scheduled crawler diffs source-of-truth content into the knowledge base to keep retrieval current.
+                </li>
+                <li>Test-driven delivery; structured logging and monitoring for service behaviour, I/O, and performance;
+                    ship through QA, security review, and deployment alongside
+                    data scientists and DevOps.</li>
+            </ul>
+        </div>
+
+        <div class="experience-entry">
+            <div class="exp-header"><strong>Independent Senior Software Engineer / Founder</strong> | Remote &nbsp; Nov
+                2025 &ndash; Present</div>
+            <ul class="highlights">
+                <li>Built and deployed a self-hosted LLM inference stack (Modal, vLLM, Qwen3) with an OpenAI-compatible
+                    API endpoint for multi-provider integration, eliminating vendor lock-in and reducing data privacy
+                    exposure.</li>
+                <li>Founder of <strong>Japas Audio</strong>; built <strong>Digital Decay</strong>, a commercial VST
+                    plugin (C++, JUCE, DSP), available at <strong>japasaudio.com</strong> <a class="arrow-link"
+                        href="https://japasaudio.com" target="_blank">↗</a>. Owned the full signal chain from DSP design
+                    through 3D UI and commercial delivery.</li>
+            </ul>
+        </div>
+
+        <div class="experience-entry">
+            <div class="exp-header"><strong>Full-Stack Engineer, Backend &amp; Cloud - Brother ISM GmbH</strong> |
+                Germany (remote) &nbsp; Jul 2023 &ndash; Oct 2025</div>
+            <ul class="highlights">
+                <li>Built core backend services for Myze, a B2B SaaS platform for industrial print-on-demand serving ~30
+                    companies across Europe; designed event-driven serverless infrastructure (Lambda, EventBridge, API
+                    Gateway, DynamoDB) for multi-step order workflows and cross-company fulfillment.</li>
+                <li>Designed multi-tenant REST APIs (OpenAPI) with JWT/OAuth2 and Cognito auth; built time-limited demo
+                    accounts via EventBridge, with provisioning on signup and tier downgrade on trial expiry; enabled
+                    non-EU shipping with automated customs docs (ShipStation, SendCloud) and Shopify order
+                    ingestion (GraphQL).</li>
+                <li>Owned full-stack delivery on customer-facing features, from API design through React/TypeScript UI;
+                    maintained and migrated unit and E2E test suites (Pytest, Jest, Cypress, Playwright).</li>
+            </ul>
+        </div>
+
+        <div class="experience-entry">
+            <div class="exp-header"><strong>Software Engineer - DataZoo GmbH</strong> | Germany (remote) &nbsp; Jun 2021
+                &ndash; Jun 2023</div>
+            <ul class="highlights">
+                <li>Productionized ML forecasting models via SageMaker-backed APIs, bridging data science output and
+                    production systems for industrial time-series applications.</li>
+                <li>Built interactive tooling for large-scale industrial time-series data; implemented processing
+                    pipelines (DuckDB, Datashader) and custom JupyterLab visualization components (Plotly) for
+                    high-density datasets.</li>
+            </ul>
+        </div>
+
+        <div class="earlier-note">
+            <strong>Earlier (2005&ndash;2021):</strong> Mechanical Engineer (XPAK USA, TECNA) and University Professor
+            (UNA, Argentina); relocated to Germany in 2018 and transitioned to software engineering.
+        </div>
+
+        <h2>Technical Projects<a class="arrow-link" href="https://nicojapas.github.io/portfolio" target="_blank">[full
+                list ↗]</a></h2>
+        <div class="projects">
+            <div class="project-item"><strong>AI Document Q&amp;A</strong> - RAG service with hybrid retrieval [FastAPI, LangChain, FAISS, Pydantic, multi-provider LLM routing] <a class="arrow-link" href="https://nicojapas.github.io/document-qa-fe"
+                    target="_blank">↗</a></div>
+            <div class="project-item"><strong>Menger World</strong> - Real-time voice AI agent driving a live WebGL
+                fractal [WebGL, GLSL, FastAPI, LangGraph, ElevenLabs]<a class="arrow-link"
+                    href="https://nicojapas.github.io/menger-world/" target="_blank">↗</a></div>
+        </div>
+
+        <h2>Education, Languages &amp; Honors</h2>
+        <div class="education">
+            <strong>Data Analytics</strong> (Ironhack) | <strong>M.A. Musical Arts</strong> (UNA) |
+            <strong>Mathematics</strong> (UBA) | <strong>Electronics Tech.</strong> (ITSB)
+        </div>
+        <div class="languages"><strong>Spanish:</strong> Native | <strong>English:</strong> C2 |
+            <strong>German:</strong> B2 (TELC Certificate) | <strong>Portuguese:</strong> A2
+        </div>
+        <div class="honors">Vetted member of <strong>Proxify's</strong> senior engineering network (top 1% of
+            applicants) &bull; <strong>Ironhack Berlin</strong> Hackshow Winner (2021) &bull;
+            <strong>Mathematical Olympiad</strong> National Finalist
+        </div>
+    </div>
+</body>
+
+</html>
