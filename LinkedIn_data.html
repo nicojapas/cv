@@ -12,15 +12,19 @@
   <header>
     <h1>Nicolás Japas</h1>
     <p>He/Him</p>
-    <p>Senior Full-Stack AI Engineer | Production LLM Systems on AWS | RAG · Agents · LangGraph · Python · TypeScript</p>
+    <p>Senior AI Engineer | Production GenAI Systems on AWS | RAG · GraphRAG · Vector Search · LangGraph · Bedrock · Python · TypeScript</p>
     <p>Lisbon, Portugal</p>
   </header>
 
   <section id="about">
     <h2>About</h2>
-    <p>🇦🇷🇩🇪 Senior AI Engineer building production GenAI systems: RAG pipelines, agent orchestration with LangGraph,
-      and LLM-integrated backends. Currently delivering LLM applications to PwC's product and AI development center as
-      an independent contractor.</p>
+    <p>🇦🇷🇩🇪 Senior AI Engineer building production GenAI systems: retrieval pipelines, agent orchestration with
+      LangGraph, and LLM-integrated backends on AWS. Currently delivering LLM applications to PwC's product and AI
+      development center as an independent contractor.</p>
+    <p>Most of my work sits in the retrieval layer, which is where answer quality is won or lost: hybrid search,
+      chunking strategy, metadata filtering, re-ranking, evaluation. On AWS that means Bedrock, OpenSearch Serverless
+      and Lambda. I also work with graph-based retrieval in Neo4j, where similarity search picks the seed nodes and a
+      Cypher traversal expands outward into connected context that was never in the chunk.</p>
     <p>My foundation is backend and cloud. API-driven services, event-driven serverless architectures, and data
       pipelines on AWS that are reliable, observable, and maintainable at scale.</p>
     <p>Independently, I build multi-provider inference routing and privacy-preserving self-hosted models on serverless
@@ -28,61 +32,61 @@
     <p>My engineering instincts come from a decade of mechanical engineering designing automated production machinery:
       constraints first, failure modes early, operational context always. I'm also a trained musician, and I build and
       sell commercial audio plugins in C++/JUCE under my own label, Japas Audio.</p>
-    <p>Vetted member of Proxify's senior engineering network (top 1% of applicants).</p>
     <p>German and Argentine citizen. No visa or sponsorship needed anywhere in the EU. Available for B2B contracts.</p>
 
     <h3>Top Skills</h3>
-    <p>Python (Programming Language) · Amazon Web Services (AWS) · Serverless · Digital Signal Processing · FastAPI</p>
+    <p>Python (Programming Language) · Amazon Web Services (AWS) · LangGraph · Retrieval-Augmented Generation (RAG) ·
+      Large Language Models (LLM)</p>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
 
     <article>
-      <h3>Senior Full-Stack AI Engineer</h3>
+      <h3>Senior AI Engineer</h3>
       <p><strong>PwC</strong> · Freelance · Jul 2026 - Present · 3 mos</p>
       <p>Remote</p>
       <ul>
         <li>Independent contractor engaged via JoinIT, delivering GenAI engineering to PwC AppDev, PwC's product and
           AI development center (~200 engineers, ~30 products, internal and external clients).</li>
-        <li>Designing and building production GenAI systems in Python on AWS Lambda: microservices following SRP,
-          orchestrators with minimal coupling and strong interface design, within a modular service-oriented
-          architecture.</li>
-        <li>Test-Driven Development throughout: unit tests with mocked external dependencies, plus logging and
-          monitoring for visibility into service behaviour, I/O and performance across environments.</li>
-        <li>Working alongside frontend engineers, data scientists, DevOps and product stakeholders on end-to-end
-          features.</li>
+        <li>Retrieval layer of a production conversational AI assistant: hybrid search over Amazon OpenSearch
+          Serverless (vector kNN with metadata filtering, SigV4 auth), Bedrock Titan v2 embeddings, and chunk
+          re-ranking to control answer precision.</li>
+        <li>Ingestion path that keeps retrieval current: a scheduled crawler that diffs source-of-truth content into
+          the knowledge base.</li>
+        <li>Delivery across the full service boundary: React 18 SPA, FastAPI/Pydantic API on AWS Lambda, and a
+          LangGraph agent using function calling with structured response types (text, action buttons, data
+          cards).</li>
+        <li>Python microservices on AWS Lambda following SRP, with orchestrators built for minimal coupling and
+          strong interface design within a modular service-oriented architecture.</li>
+        <li>Test-Driven Development throughout: unit tests with mocked external dependencies, structured logging and
+          monitoring for service behaviour, I/O and performance across environments. Shipping through enterprise QA,
+          security review and deployment alongside data scientists, DevOps and product stakeholders.</li>
       </ul>
       <p>Skills: Python (Programming Language) · Large Language Models (LLM) · LangGraph · RAG · Amazon Web Services
-        (AWS) · Test-Driven Development · System Architecture · TypeScript</p>
+        (AWS) · Test-Driven Development · System Architecture · TypeScript · Vector search · Embeddings · AWS Lambda ·
+        React.js · Amazon Bedrock · Open Search · Information Retrieval</p>
     </article>
 
     <article>
-      <h3>Software Engineer</h3>
-      <p><strong>Self-employed</strong> · Jan 2026 - Present · 9 mos</p>
-      <p>Remote</p>
-      <ul>
-        <li>Built a self-hosted LLM inference stack on serverless GPU infrastructure (Modal, vLLM, Qwen3) with an
-          OpenAI-compatible API endpoint, enabling provider-agnostic LLM integration across backend services.</li>
-        <li>Building RAG pipelines, multi-provider LLM routing, and AI-powered tools using FastAPI, LangChain, and
-          Pydantic. Development is AI-assisted (Claude Code, Cursor).</li>
-      </ul>
-      <p>Skills: Software Development · Infrastructure as code (IaC) · System Architecture · Relational Databases · AWS
-        Lambda · FastAPI · LangChain · Pydantic · Back-End Web Development · Microservices · Data Pipelines · Systems
-        Design · Troubleshooting
-        · Amazon S3
-      </p>
-    </article>
-
-    <article>
-      <h3>Founder & Audio Software Engineer</h3>
+      <h3>Independent Senior Software Engineer / Founder</h3>
       <p><strong>Japas Audio</strong> · Nov 2025 - Present · 11 mos</p>
       <ul>
-        <li>Built Digital Decay, a commercial VST plugin (C++, JUCE, DSP); available at japasaudio.com. Full signal
-          chain ownership from DSP design through to end-user audio experience, including 3D UI and commercial
+        <li>Founder of Japas Audio. Built and released Digital Decay, a commercial VST plugin (C++, JUCE, DSP)
+          available at japasaudio.com, owning the full signal chain from DSP design through 3D UI and commercial
           distribution.</li>
+        <li>Built a self-hosted LLM inference stack on serverless GPU infrastructure (Modal, vLLM, Qwen3) with an
+          OpenAI-compatible endpoint, enabling provider-agnostic LLM integration and zero data egress for
+          privacy-sensitive workloads.</li>
+        <li>Built a RAG service with hybrid BM25 and vector retrieval, RRF fusion, Voyage rerank-2.5, a Ragas
+          evaluation harness and Prometheus metrics; multi-provider LLM routing, JWT auth with per-user document
+          isolation, and runtime model switching.</li>
+        <li>Built Menger World, a real-time voice agent driving a WebGL/GLSL raymarched 3D scene through live tool
+          calls into shader state, with two interchangeable backends: ElevenLabs Conversational AI for low-latency
+          voice-to-voice, and a LangGraph path with structured Pydantic outputs.</li>
       </ul>
-      <p>Skills: Digital Signal Processing · C++ · JUCE · VST</p>
+      <p>Skills: Digital Signal Processing · C++ · JUCE · VST · Vector search · Large Language Models (LLM) ·
+        LangGraph · FastAPI · Embeddings · WebGL · Retrieval-Augmented Generation (RAG) · vLLM</p>
     </article>
 
     <article>
@@ -208,7 +212,7 @@
           artifact behavior matter at the sample level.</p>
         <p>Digital Decay is our first release — a destructive delay plugin that combines wave-shaping and distortion to
           create unique soundscapes for innovative sound design and music production.</p>
-        <p><strong>Skills:</strong> C++ · JUCE · Digital Signal Processing · VST</p>
+        <p><strong>Skills:</strong> C++, JUCE and +3 skills</p>
       </article>
 
       <h3>#2 Menger World</h3>
@@ -232,11 +236,10 @@
 
     <article>
       <h3>#3 AI Document Q&A API</h3>
-      <p>AI-powered backend API for semantic document ingestion and question answering over private datasets.</p>
-      <p>RAG API built with FastAPI, MongoDB Atlas, and FAISS. Supports multi-provider LLMs (Gemini, DeepSeek,
-        self-hosted Qwen 3 via Modal), JWT auth with per-user document isolation, and runtime model switching.</p>
-      <p><strong>Skills:</strong> Python (Programming Language) · FastAPI · Large Language Models (LLM) · Vector search
-        · Embeddings · FAISS · MongoDB Atlas · RAG · Self-hosted Inference</p>
+      <p>RAG API with hybrid BM25 and vector retrieval, RRF fusion, Voyage rerank-2.5, a Ragas evaluation harness and
+        Prometheus metrics. Multi-provider LLM routing (Gemini, DeepSeek, self-hosted Qwen 3 via Modal), JWT auth
+        with per-user document isolation, and runtime model switching.</p>
+      <p><strong>Skills:</strong> Python (Programming Language), FastAPI and +7 skills</p>
     </article>
 
     <article>
